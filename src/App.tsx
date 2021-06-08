@@ -13,7 +13,7 @@ const onClickFetchUser = () => {
 setLoading(true);
 setError(false);
 
-axio
+axios
 .get<Array<User>>("https://jsonplaceholder.typicode.com/users")
 .then((res) => {
 const data = res.data.map((user) => ({
