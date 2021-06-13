@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 import { UserProfile } from "../types/userProfile"
 import { User } from "../types/api/user"
@@ -28,6 +29,6 @@ setError(true);
  .finally(() => {
 setLoading(false);
  });
-    
-  }
-}
+  };
+return { getUsers, userProfiles, loading, error };
+};
